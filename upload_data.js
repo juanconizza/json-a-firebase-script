@@ -20,12 +20,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const collectionRef = collection(db, 'productos');
+const collectionRef = collection(db, 'productos'); //Editar la colección si corresponde. 
 
-// Read JSON file synchronously
+// Lee el json verificar que el nombre del archivo json sea correcto, sino modificar. 
 const dataArray = JSON.parse(readFileSync('./data.json', 'utf8'));
 
-// Loop through the array and add each object to Firestore
+// Acá hacer un loop por cada archivo y lo sube a la coleccion de referencia. 
 dataArray.forEach(async (data) => {
   try {
     const docRef = await addDoc(collectionRef, data);
