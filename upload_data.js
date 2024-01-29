@@ -34,3 +34,5 @@ dataArray.forEach(async (data) => {
     console.error("Error adding document: ", error);
   }
 });
+
+// ejecutar en consola "node upload_data.js" para correr el srcipt
