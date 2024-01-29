@@ -1,0 +1,13 @@
+{
+  "name": "wakeup-store-db-firebase",
+  "version": "1.0.0",
+  "description": "Upload data to Firebase",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "firebase": "^10.7.2"
+  },
+  "type": "module"
+}
